@@ -1,4 +1,8 @@
-.fade-in {
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    min-height: 100vh;
+  }
+  .fade-in {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInMove 1s forwards;
@@ -12,7 +16,4 @@
   }
 
   
-  body {
-    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-    min-height: 100vh;
-  }
+  
