@@ -13,9 +13,13 @@ function togglePassword() {
     }
   }
   document.getElementById("gobutton").addEventListener("click", function() {
-  window.location.href = "login.html";
+    if (window.location.pathname.toLowerCase().includes("home.html")) {
+      window.location.href = "login.html";
+    } else {
+      window.location.href = "login.html";
+    }
   });
-  document.getElementById("gobuttonhome").addEventListener("click", function() {
-    window.location.href = "html/login.html";
-  });
+
+
+  
   
