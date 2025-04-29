@@ -10,7 +10,7 @@ body {
 
   @keyframes fadeInMove {
     to {
-      opacity: ;
+      opacity: 1;
       transform: translateY(0);
     }
   }
