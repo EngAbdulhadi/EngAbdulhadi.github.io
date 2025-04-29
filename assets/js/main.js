@@ -12,3 +12,10 @@ function togglePassword() {
       icon.classList.add('bi-eye-fill');
     }
   }
+  document.getElementById("gobutton").addEventListener("click", function() {
+  window.location.href = "login.html";
+  });
+  document.getElementById("gobuttonhome").addEventListener("click", function() {
+    window.location.href = "html/login.html";
+  });
+  
