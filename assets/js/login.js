@@ -14,7 +14,7 @@ function togglePassword() {
   }
   document.getElementById("gobutton").addEventListener("click", function() {
     if (window.location.pathname.toLowerCase().includes("home.html")) {
-      window.location.href = "login.html";
+      window.location.href = "C:\Users\Dell\OneDrive\Desktop\EngAbdulhadi\EngAbdulhadi.github.io\html\login.html";
     } else {
       window.location.href = "login.html";
     }
