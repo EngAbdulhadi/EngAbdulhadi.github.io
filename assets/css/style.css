@@ -1,20 +1,28 @@
+/*sayfanin arka stili icin*/
 body {
     background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
     min-height: 100vh;
   }
+  /*sayfa yuklendiginde form hareket ettirmek icin*/
   .fade-in {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInMove 1s forwards;
   }
-
   @keyframes fadeInMove {
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
-
+/*kolayca hareket ettirmek icin */
+  .zoom-on-hover {
+    transition: transform 0.3s ease; 
+  }
+  /*fare geldiginde %10 buyutmak icin*/
+  .zoom-on-hover:hover {
+    transform: scale(1.1); 
+  }
   
   
 

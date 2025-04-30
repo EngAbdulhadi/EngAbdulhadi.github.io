@@ -12,13 +12,16 @@ function togglePassword() {
       icon.classList.add('bi-eye-fill');
     }
   }
-  document.getElementById("gobutton").addEventListener("click", function() {
-    if (window.location.pathname.toLowerCase().includes("home.html")) {
-      window.location.href = "C:\Users\Dell\OneDrive\Desktop\EngAbdulhadi\EngAbdulhadi.github.io\html\login.html";
+  document.getElementById("gobutton").addEventListener("click", function () {
+    const currentPath = window.location.pathname.toLowerCase();
+  
+    if (currentPath.includes("home.html")) {
+      window.location.href = "html/login.html";
     } else {
       window.location.href = "login.html";
     }
   });
+  
 
 
   
