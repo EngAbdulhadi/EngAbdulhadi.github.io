@@ -7,6 +7,27 @@ function downloadCV() {
     link.click();
     document.body.removeChild(link);
 }
+/*ofcanvasi kullandiktan sonra kapatma kodu */
+document.querySelectorAll('.list-group-item').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); 
+    const targetSelector = this.getAttribute('data-target');
+    const targetEl = document.querySelector(targetSelector);
+    if (targetEl) {
+      targetEl.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    const offcanvasEl = document.querySelector('.offcanvas.show');
+    if (offcanvasEl) {
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+      setTimeout(() => {
+        bsOffcanvas.hide();
+      }, 400);
+    }
+  });
+});
 /*modlari degistirmek icin */
 (() => {
     'use strict'

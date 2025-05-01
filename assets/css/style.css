@@ -1,16 +1,18 @@
 /*sayfanin arka stili icin*/
 [data-bs-theme="light"] body {
-  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #757570 100%);
 }
 [data-bs-theme="dark"] body {
-  background: linear-gradient(135deg, #050505, #3c2948 100%);
+  background: linear-gradient(135deg, #000000, #291c3d 100%);
 }
 [data-bs-theme="auto"] body {
   background: linear-gradient(135deg, #ececec 0%, #dcdcdc 100%);
+
 }
 .bi {
   width: 1rem;
   height: 1rem;
+
 }
 
   /*sayfa yuklendiginde form hareket ettirmek icin*/

@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
-</html>
-      <body>
+<html>
+      <body class="bg-body text-body"data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="100" tabindex="0">
         <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
           <button class="btn btn-secondary py-2 dropdown-toggle d-flex align-items-center"
             id="bd-theme"
@@ -68,78 +68,219 @@
             <path d="M13.854 3.646a.5.5 0 0 1 0 .708L6.707 11.5 3.5 8.293a.5.5 0 0 1 .707-.707L6.707 10.086l6.44-6.44a.5.5 0 0 1 .707 0z"/>
           </symbol>
         </svg>
-        <nav class="navbar navbar-expand-lg mb-5 bg-body-tertiary rounded"  aria-label="Thirteenth navbar example">
+        <nav class="navbar navbar-expand-lg mb-5 bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
           <div class="container-fluid">
-            <a class="navbar-brand col-lg-4 mx-3 zoom-on-hover" href="home.html">Abdulhadi Krımesh</a>
+            <div class="col-5">
+              <button class="btn btn-link text-decoration-none fw-bold fs-5 zoom-on-hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                Abdulhadi Krimesh
+              </button>
+            </div>
+        
             <button class="navbar-toggler zoom-on-hover" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-           
-            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-              
-              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+        
+            <div class="collapse navbar-collapse d-lg-flex col-3" id="navbarsExample11">
+              <ul class="navbar-nav col-3 justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link active zoom-on-hover mx-3" aria-current="page" href="home.html">Hakkımda</a>
+                  <a class="nav-link active zoom-on-hover mx-3" href="home.html">Hakkımda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active zoom-on-hover mx-3" aria-current="page" href="html/sehrim.html">Şehrim</a>
+                  <a class="nav-link active zoom-on-hover mx-3" href="html/sehrim.html">Şehrim</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active zoom-on-hover mx-3" aria-current="page" href="html/mirasimiz.html">Mirasımız</a>
+                  <a class="nav-link active zoom-on-hover mx-3" href="html/mirasimiz.html">Mirasımız</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle zoom-on-hover mx-3" href="#" data-bs-toggle="dropdown" aria-expanded="false">Bilgilerim</a>
+                  <a class="nav-link dropdown-toggle zoom-on-hover mx-3" href="#" data-bs-toggle="dropdown">Bilgilerim</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item zoom-on-hover " href="html/cv.html">CV</a></li>
-                    <li><a class="dropdown-item zoom-on-hover " href="html/ilgialanlarim.html">İlgi Alanlarım</a></li>
-                    <li><a class="dropdown-item zoom-on-hover " href="html/iletisim.html">İletişim</a></li>
+                    <li><a class="dropdown-item zoom-on-hover" href="html/cv.html">CV</a></li>
+                    <li><a class="dropdown-item zoom-on-hover" href="html/ilgialanlarim.html">İlgi Alanlarım</a></li>
+                    <li><a class="dropdown-item zoom-on-hover" href="html/iletisim.html">İletişim</a></li>
                   </ul>
                 </li>
               </ul>
-              <div class="d-lg-flex col-6 justify-content-lg-end mr-0">
+        
+              <div class="col-9 text-end">
                 <button class="btn btn-primary zoom-on-hover" id="gobutton">Log in</button>
               </div>
             </div>
           </div>
         </nav>
+    
 
-        <section class="container mt-5">
-          <h1 class="text-center mb-4">Hakkımda</h1>
+        <div class="container py-5">
+          <header class="mb-5 text-center">
+              <h1 class="display-4 text-primary">Ben Kimim?</h1>
+              <p class="lead">Merhaba! Ben <strong>[Adınız Soyadınız]</strong>. Hayatım, tutkularım ve deneyimlerimle ilgili her şeyi bu sayfada bulabilirsiniz.</p>
+          </header>
+  
+          <section id="life-story" class="mb-5 ">
+              <h2 class="text-secondary text-center">Hayat Hikayem</h2>
+              <p>[Buraya doğum yeriniz, nasıl büyüdüğünüz, hangi yolları izlediğiniz ve sizi siz yapan önemli olayları yazabilirsiniz.]</p>
+          </section>
+          <section id="photos" class="container my-5 text-center">
+            <h2 class="text-secondary mb-4">Hobilerim</h2>
+            <div class="row text-center ">
+              
+              <div class="card col-md-3 col-sm-6 mx-3 my-3 zoom-on-hover" style="width: 18rem;">
+                <img src="assets/img/kodlamak.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
           
-          <p>Merhaba! Benim adım <strong>Ahmet Yılmaz</strong>. Sakarya Üniversitesi Bilgisayar Mühendisliği 2. sınıf öğrencisiyim. Web geliştirme konusunda tutkuluyum ve HTML, CSS ve JavaScript dillerinde projeler geliştiriyorum.</p>
+              <div class="card col-md-3 col-sm-6 mx-3 my-3 zoom-on-hover" style="width: 18rem;">
+                <img src="assets/img/kodlamak.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
           
-          <h3>Hobilerim</h3>
-          <ul>
-            <li>Futbol oynamak</li>
-            <li>Yüzme</li>
-            <li>Kod yazmak</li>
-            <li>Teknoloji blogları okumak</li>
-          </ul>
-      
-          <h3>Favori Aktivitelerimden Görseller</h3>
-          <div class="row text-center">
-            <div class="col-md-4 mb-3">
-              <img src="https://via.placeholder.com/300x200?text=Futbol" class="img-fluid rounded zoom-on-hover" alt="Futbol">
+              <div class="card col-md-3 col-sm-6 mx-3 my-3 zoom-on-hover" style="width: 18rem;">
+                <img src="assets/img/kodlamak.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+          
+                <div class="card col-md-3 col-sm-6 mx-3 my-3 zoom-on-hover" style="width: 18rem;">
+                  <img src="assets/img/kodlamak.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              <div class="text-secondary text-start ">
+                <h4>Ilgi alanlarım sayfası</h4>
+                <ul>
+                <li><a href="html/ilgialanlarim.html" class="btn btn-primary link-light ">İletişim Sayfası</a></li>
+              </ul>
+              </div>
             </div>
-            <div class="col-md-4 mb-3">
-              <img src="https://via.placeholder.com/300x200?text=Kodlama" class="img-fluid rounded zoom-on-hover" alt="Kodlama">
+          </section>
+
+          <section id="countries" class="mb-5">
+            <h2 class="text-secondary text-center mb-4">Ziyaret Ettiğim Ülkeler</h2>
+            <div class="row justify-content-center">
+          
+           
+              <div class="col-12 col-md-4 mb-4">
+                <div class="text-center">
+                  <button class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    Toggle width collapse 1
+                  </button>
+                </div>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body mx-auto" style="width: 300px;">
+                      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+             
+              <div class="col-12 col-md-4 mb-4">
+                <div class="text-center">
+                  <button class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                    Toggle width collapse 2
+                  </button>
+                </div>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="collapse">
+                    <div class="card card-body mx-auto" style="width: 300px;">
+                      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
             </div>
-            <div class="col-md-4 mb-3">
-              <img src="https://via.placeholder.com/300x200?text=Yüzme" class="img-fluid rounded zoom-on-hover" alt="Yüzme">
-            </div>
+          </section>
+          
+          
+  
+          <section id="experience" class="mb-5 ">
+              <h2 class="text-secondary text-center py-4">İş ve Tecrübelerim</h2>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button  zoom-on-hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item ">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed zoom-on-hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item ">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed zoom-on-hover"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+  
+          <section id="quote" class="mb-5 text-center">
+              <h2 class="text-secondary py-4">Beni Etkileyen Bir Söz</h2>
+              <blockquote class="blockquote text-center border rounded p-3 bg-body-tertiary">
+                  <p>"[Buraya sizi etkileyen bir alıntı yazın.]"</p>
+              </blockquote>
+          </section>
+        <footer class="text-center py-4 border-top">
+          <p class="mb-0 text-muted">© 2025 [Adınız Soyadınız] - Tüm Hakları Saklıdır</p>
+      </footer>
+          <section id="links" class="mb-5">
+              <h2 class="text-secondary ">Bağlantılarım</h2>
+              <ul class="list-unstyled">
+                  <li><a href="iletisim.html" class="link-primary">İletişim Sayfası</a></li> 
+              </ul>
+          </section>
+      </div>
+  
+
+            
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Abdulhadi Krimesh</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-      
-          <h3>Bağlantılar</h3>
-          <ul>
-            <li><a href="html/cv.html">CV Sayfam</a></li>
-            <li><a href="https://github.com/ahmetyilmaz" target="_blank" >GitHub Profilim</a></li>
-          </ul>
-        </section>
-      
-        <footer class="bg-dark text-white text-center py-3 mt-5">
-          © 2025 Ahmet Yılmaz - Sakarya Üniversitesi
-        </footer>
-        
+          <div class="offcanvas-body">
+            <div class="row">
+              <div class="col-8">
+                <div id="list-example" class="list-group">
+                  <a class="list-group-item list-group-item-action" href="#" data-target="#photos">Hobilerim</a>
+                  <a class="list-group-item list-group-item-action" href="#" data-target="#countries">Ziyaret Ettiğim Ülkeler</a>
+                  <a class="list-group-item list-group-item-action" href="#" data-target="#experience">İş ve Tecrübelerim</a>
+                  <a class="list-group-item list-group-item-action" href="#" data-target="#quote">Beni Etkileyen Bir Söz</a>
+                  <a class="list-group-item list-group-item-action" href="#" data-target="#links">Bağlantılarım</a>
+
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/login.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
