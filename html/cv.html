@@ -12,64 +12,10 @@
 
 </html>
       <body>
-        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-          <button class="btn btn-secondary py-2 dropdown-toggle d-flex align-items-center"
-            id="bd-theme"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="dropdown"
-            aria-label="Toggle theme (auto)">
-            <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
-            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-          </button>
         
-          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
-                Light
-                <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
-                Dark
-                <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
-                Auto
-                <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
-              </button>
-            </li>
-          </ul>
-        </div>
-        
-        <!-- SVG Icons -->
-        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-          <symbol id="sun-fill" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M8 4.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7zM8 1a.5.5 0 0 1 .5.5v1.527a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1zM4.05 2.05a.5.5 0 0 1 .707 0l1.074 1.074a.5.5 0 1 1-.707.707L4.05 2.757a.5.5 0 0 1 0-.707zM1 8a.5.5 0 0 1 .5-.5h1.527a.5.5 0 0 1 0 1H1.5A.5.5 0 0 1 1 8zM4.05 13.95a.5.5 0 0 1 0-.707l1.074-1.074a.5.5 0 1 1 .707.707l-1.074 1.074a.5.5 0 0 1-.707 0zM8 15a.5.5 0 0 1-.5-.5v-1.527a.5.5 0 0 1 1 0V14.5a.5.5 0 0 1-.5.5zM13.95 13.95a.5.5 0 0 1-.707 0l-1.074-1.074a.5.5 0 1 1 .707-.707l1.074 1.074a.5.5 0 0 1 0 .707zM15 8a.5.5 0 0 1-.5.5h-1.527a.5.5 0 0 1 0-1H14.5a.5.5 0 0 1 .5.5z"/>
-          </symbol>
-        
-          <symbol id="moon-stars-fill" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M6 0a.5.5 0 0 0-.5.5v1.57a.5.5 0 1 0 1 0V.5A.5.5 0 0 0 6 0zM9.354 1.146a.5.5 0 1 0-.708.708L9.793 3H8.5a.5.5 0 0 0 0 1H10a.5.5 0 0 0 .354-.854L9.354 1.146z"/>
-            <path d="M6 2a6 6 0 1 0 4.472 10.472 5.999 5.999 0 0 1-4.472-10.472z"/>
-          </symbol>
-        
-          <symbol id="circle-half" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M8 15A7 7 0 1 1 8 1v14z"/>
-          </symbol>
-        
-          <symbol id="check2" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M13.854 3.646a.5.5 0 0 1 0 .708L6.707 11.5 3.5 8.293a.5.5 0 0 1 .707-.707L6.707 10.086l6.44-6.44a.5.5 0 0 1 .707 0z"/>
-          </symbol>
-        </svg>
         <nav class="navbar navbar-expand-lg mb-5 bg-body-tertiary rounded"  aria-label="Thirteenth navbar example">
           <div class="container-fluid">
-            <a class="navbar-brand col-lg-4 me-0 mx-3 zoom-on-hover" href="../home.html">Abdulhadi Krımesh</a>
+            <a class="navbar-brand col-lg-3 fw-bold text-primary me-0 mx-3 zoom-on-hover" href="../home.html">Abdulhadi Krımesh</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -117,21 +63,36 @@
     
                     <section class="mb-5">
                         <h3 class="text-primary">İletişim Bilgileri</h3>
-                        <ul class="list-unstyled">
-                            <li><strong>Adres:</strong> <!-- Sakarya, Türkiye --></li>
-                            <li><strong>Telefon:</strong> <!-- +90... --></li>
-                            <li><strong>E-posta:</strong> <!-- email adresi --></li>
-                            <li><strong>LinkedIn:</strong> <a href="#">Profil Linki</a></li>
-                            <li><strong>GitHub:</strong> <a href="#">Profil Linki</a></li>
+                        <ul class="list-unstyled ">
+                            <li><strong>Iletişim Sayfası:</strong> <a href="iletisim.html" >İletişim</a></li>
                         </ul>
                     </section>
     
                     <section class="mb-5">
                         <h3 class="text-primary">Teknik Yetenekler</h3>
-                        <ul>
-                            <li>Programlama Dilleri: <!-- Örn: C++, Python --></li>
-                            <li>Veritabanı: <!-- Örn: SQL --></li>
-                            <li>Diğer: <!-- Algoritmalar, Frameworkler vs. --></li>
+                        <ul class="d-flex col-12 list-unstyled">
+                            <li class="col-4 text-center">Programlama Dilleri: 
+                              <ul>
+                              <li></li>
+                              <li></li>
+                             </ul>
+                            </li>
+                             
+                            <li class="col-4 text-center">Veritabanı: 
+                              <ul>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                          </li>
+                            
+                            <li class="col-4 text-center">Diğer:
+                              <ul class="text-start ">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul> 
+                          </li>
+                            
                         </ul>
                     </section>
     
@@ -199,6 +160,61 @@
       </main>
 </div>
 
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+  <button class="btn btn-secondary py-2 dropdown-toggle d-flex align-items-center"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    aria-label="Toggle theme (auto)">
+    <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
+    <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+  </button>
+
+  <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+        <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
+        Light
+        <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+        <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
+        Dark
+        <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+        <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+        Auto
+        <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+      </button>
+    </li>
+  </ul>
+</div>
+
+<!-- SVG Icons -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="sun-fill" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M8 4.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7zM8 1a.5.5 0 0 1 .5.5v1.527a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1zM4.05 2.05a.5.5 0 0 1 .707 0l1.074 1.074a.5.5 0 1 1-.707.707L4.05 2.757a.5.5 0 0 1 0-.707zM1 8a.5.5 0 0 1 .5-.5h1.527a.5.5 0 0 1 0 1H1.5A.5.5 0 0 1 1 8zM4.05 13.95a.5.5 0 0 1 0-.707l1.074-1.074a.5.5 0 1 1 .707.707l-1.074 1.074a.5.5 0 0 1-.707 0zM8 15a.5.5 0 0 1-.5-.5v-1.527a.5.5 0 0 1 1 0V14.5a.5.5 0 0 1-.5.5zM13.95 13.95a.5.5 0 0 1-.707 0l-1.074-1.074a.5.5 0 1 1 .707-.707l1.074 1.074a.5.5 0 0 1 0 .707zM15 8a.5.5 0 0 1-.5.5h-1.527a.5.5 0 0 1 0-1H14.5a.5.5 0 0 1 .5.5z"/>
+  </symbol>
+
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M6 0a.5.5 0 0 0-.5.5v1.57a.5.5 0 1 0 1 0V.5A.5.5 0 0 0 6 0zM9.354 1.146a.5.5 0 1 0-.708.708L9.793 3H8.5a.5.5 0 0 0 0 1H10a.5.5 0 0 0 .354-.854L9.354 1.146z"/>
+    <path d="M6 2a6 6 0 1 0 4.472 10.472 5.999 5.999 0 0 1-4.472-10.472z"/>
+  </symbol>
+
+  <symbol id="circle-half" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M8 15A7 7 0 1 1 8 1v14z"/>
+  </symbol>
+
+  <symbol id="check2" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708L6.707 11.5 3.5 8.293a.5.5 0 0 1 .707-.707L6.707 10.086l6.44-6.44a.5.5 0 0 1 .707 0z"/>
+  </symbol>
+</svg>
 
 
 

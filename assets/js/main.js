@@ -7,7 +7,39 @@ function downloadCV() {
     link.click();
     document.body.removeChild(link);
 }
-/*ofcanvasi kullandiktan sonra kapatma kodu */
+/*sayfalari degistirirken kullanilan aktsiyon icin */
+document.addEventListener("DOMContentLoaded", () => {
+  // دخول الصفحة
+  document.body.classList.add("page-transition-enter");
+  requestAnimationFrame(() => {
+    document.body.classList.add("page-transition-enter-active");
+  });
+
+  // عند الضغط على أي رابط يحمل class معين
+  const links = document.querySelectorAll("a.transition-link");
+
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.href;
+
+      if (href && href !== window.location.href) {
+        e.preventDefault();
+
+        document.body.classList.add("page-transition-exit");
+
+        // نستخدم next frame عشان تشتغل الـ transition
+        requestAnimationFrame(() => {
+          document.body.classList.add("page-transition-exit-active");
+        });
+
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500); // نفس مدة الأنيميشن
+      }
+    });
+  });
+});
+/*offcanvasi kullandiktan sonra kapatma kodu */
 document.querySelectorAll('.list-group-item').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault(); 
