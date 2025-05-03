@@ -15,38 +15,12 @@
   height: 1rem;
 
 }
-/*sayfalar arasindaki aksiyon*/
-/* الخروج */
-.page-transition-exit {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.5s ease;
-}
-.page-transition-exit-active {
-  opacity: 0;
-  transform: translateY(20px); /* ممكن تغيرها لـ slide أو scale */
-}
-
-/* الدخول */
-.page-transition-enter {
-  opacity: 0;
-  transform: translateY(20px);
-}
-.page-transition-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.5s ease;
-}
-
   /*sayfa yuklendiginde form hareket ettirmek icin*/
   .fade-in {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInMove 1s forwards;
   }
-
-
-
   @keyframes fadeInMove {
     to {
       opacity: 1;
