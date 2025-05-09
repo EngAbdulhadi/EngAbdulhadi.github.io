@@ -15,14 +15,14 @@
         
         <nav class="navbar navbar-expand-lg mb-5 bg-body-tertiary rounded"  aria-label="Thirteenth navbar example">
           <div class="container-fluid">
-            <a class="navbar-brand col-lg-3 fw-bold text-primary me-0 mx-3 zoom-on-hover" href="../home.html">Abdulhadi Krımesh</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
+            <a class="navbar-brand text-primary text-decoration-none fw-bold fs-5 zoom-on-hover" href="../home.html">Abdulhadi Krımesh</a>
+            <button class="navbar-toggler zoom-on-hover" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
     
             <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
               
-              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <ul class="navbar-nav col-10  justify-content-lg-center">
                 <li class="nav-item">
                   <a class="nav-link active zoom-on-hover mx-3" aria-current="page" href="../home.html">Hakkımda</a>
                 </li>
@@ -35,18 +35,19 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle zoom-on-hover mx-3" href="#" data-bs-toggle="dropdown" aria-expanded="false">Bilgilerim</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item zoom-on-hover" href="cv.html">CV</a></li>
-                    <li><a class="dropdown-item zoom-on-hover" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                    <li><a class="dropdown-item zoom-on-hover" href="iletisim.html">İletişim</a></li>
+                    <li><a class="dropdown-item zoom-on-hover " href="cv.html">öz geçmiş</a></li>
+                    <li><a class="dropdown-item zoom-on-hover " href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                    <li><a class="dropdown-item zoom-on-hover " href="iletisim.html">İletişim</a></li>
                   </ul>
                 </li>
               </ul>
-              <div class="d-lg-flex col-4 justify-content-lg-end ">
-                <button class="btn btn-primary zoom-on-hover mx-2" id="gobutton">Log in</button>
+              <div class="d-lg-flex col-2 justify-content-lg-end mr-0">
+                <button class="btn btn-primary zoom-on-hover" id="gobutton">Log in</button>
+                <button class="btn btn-success zoom-on-hover mx-1" onclick="downloadCV()">Download CV</button>
               </div>
-              <div class="d-lg-flex col-6 mx-2">
-                <button class="btn btn-success zoom-on-hover" onclick="downloadCV()">Download CV</button>
-            </div>
+               
+                
+            
             </div>
           </div>
         </nav>
@@ -57,14 +58,17 @@
             <div class="card shadow-lg ">
                 <div class="card-body">
                     <header class="text-center mb-4">
-                        <h1 class="display-5">Abdulhadi krimesh</h1>
-                        <p class="lead"><!-- Adınız Soyadınız --></p>
+                        <h1 class="display-5">Öz Geçmiş</h1>
+                        <p class="lead">Abdulhadi krımesh</p>
                     </header>
     
                     <section class="mb-5">
                         <h3 class="text-primary">İletişim Bilgileri</h3>
                         <ul class="list-unstyled ">
-                            <li><strong>Iletişim Sayfası:</strong> <a href="iletisim.html" >İletişim</a></li>
+                          <li><strong>Telefon No :  </strong><a href="tel:+905519529778">+90 551 952 97 78</a></li>
+                          <li><strong>Mail adresi :</strong><a href="mailto:abdulhadikremesh@gmail.com">abdulhadikremesh@gmail.com</a></li>
+                          <li><strong>linkedIn :</strong> <a href="https://www.linkedin.com/in/abdulhadi-kremesh-943422355/">Abdulhadi kremesh</a></li>
+                          <li><strong>Iletişim Sayfası:</strong> <a href="iletisim.html" >İletişim</a></li>
                         </ul>
                     </section>
     
@@ -146,14 +150,13 @@
                         <h3 class="text-primary">Eğitim</h3>
                         <div class="border rounded p-3">
                             <h5>Sakarya Üniversitesi</h5>
-                            <p><strong>Bölüm:</strong> <!-- Yazılım Mühendisliği --></p>
-                            <p><strong>Dönem:</strong> <!-- 2021 - ... --></p>
+                            <p><strong>Bölüm:</strong> Bilgisayar Mühendisliği</p>
+                            <p><strong>Sınıf:</strong> 1.sınıf</p>
+                            <p><strong>Dönem:</strong>  2024 - 2025</p>
                         </div>
                     </section>
     
-                    <footer class="text-center mt-4">
-                        <p class="text-muted">© 2025 <!-- Adınız buraya --></p>
-                    </footer>
+                    
                 </div>
             </div>
         </div>
@@ -219,6 +222,11 @@
 
 
 
+
+
+<footer class="text-center py-4 border-top">
+          <p class="mb-0 text-muted">© 2025 Abdulhadi KRIMESH - Sakarya üniversitesi</p>
+      </footer>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/login.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>

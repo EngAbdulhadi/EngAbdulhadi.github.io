@@ -69,14 +69,14 @@
         </svg>
         <nav class="navbar navbar-expand-lg mb-5 bg-body-tertiary rounded"  aria-label="Thirteenth navbar example">
           <div class="container-fluid">
-            <a class="navbar-brand col-lg-4 mx-3 zoom-on-hover" href="../home.html">Abdulhadi Krımesh</a>
+            <a class="navbar-brand text-primary text-decoration-none fw-bold fs-5 zoom-on-hover" href="../home.html">Abdulhadi Krımesh</a>
             <button class="navbar-toggler zoom-on-hover" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
     
             <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
               
-              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <ul class="navbar-nav col-10  justify-content-lg-center">
                 <li class="nav-item">
                   <a class="nav-link active zoom-on-hover mx-3" aria-current="page" href="../home.html">Hakkımda</a>
                 </li>
@@ -89,19 +89,60 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle zoom-on-hover mx-3" href="#" data-bs-toggle="dropdown" aria-expanded="false">Bilgilerim</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item zoom-on-hover " href="cv.html">CV</a></li>
+                    <li><a class="dropdown-item zoom-on-hover " href="cv.html">öz geçmiş</a></li>
                     <li><a class="dropdown-item zoom-on-hover " href="ilgialanlarim.html">İlgi Alanlarım</a></li>
                     <li><a class="dropdown-item zoom-on-hover " href="iletisim.html">İletişim</a></li>
                   </ul>
                 </li>
               </ul>
-              <div class="d-lg-flex col-6 justify-content-lg-end mr-0">
+              <div class="d-lg-flex col-2 justify-content-lg-end mr-0">
                 <button class="btn btn-primary zoom-on-hover" id="gobutton">Log in</button>
               </div>
             </div>
           </div>
         </nav>
        
+<h2>ابحث عن فيلم</h2>
+  <input type="text" id="searchInput" placeholder="اكتب اسم الفيلم">
+  <button onclick="searchMovies()">بحث</button>
+
+  <div id="movies"></div>
+
+  <script>
+    async function searchMovies() {
+      const query = document.getElementById('searchInput').value;
+      const apiKey = 'cd7a2ac0e8686145766a53cb2041fa75'; // استبدله بمفتاحك من TMDB
+      const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(query)}&language=ar`;
+
+      const response = await fetch(url);
+      const data = await response.json();
+
+      const results = data.results;
+      const moviesDiv = document.getElementById('movies');
+      moviesDiv.innerHTML = '';
+
+      if (results.length === 0) {
+        moviesDiv.innerHTML = '<p>لا توجد نتائج.</p>';
+        return;
+      }
+
+      results.forEach(movie => {
+        const title = movie.title;
+        const overview = movie.overview || 'لا يوجد وصف.';
+        const item = document.createElement('div');
+        item.innerHTML = `<h3>${title}</h3><p>${overview}</p><hr>`;
+        moviesDiv.appendChild(item);
+      });
+    }
+  </script>
+
+</body>
+</html>
+
+
+        <footer class="text-center py-4 border-top">
+          <p class="mb-0 text-muted">© 2025 Abdulhadi KRIMESH - Sakarya üniversitesi</p>
+      </footer>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/login.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
