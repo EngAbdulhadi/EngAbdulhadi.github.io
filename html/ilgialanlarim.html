@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>İlgi Alanlarım</title>
+
   <link rel="icon" href="../assets/img/pngwing.com.png" type="image/x-icon">
 
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -101,48 +102,22 @@
             </div>
           </div>
         </nav>
-       
-<h2>ابحث عن فيلم</h2>
-  <input type="text" id="searchInput" placeholder="اكتب اسم الفيلم">
-  <button onclick="searchMovies()">بحث</button>
+       <div class="container">
+        <h2 class="mt-5 mb-4">📚 Favori Kitaplarım</h2>
+<div id="favorite-books" class="row g-4"></div>
+</div>
 
-  <div id="movies"></div>
-
-  <script>
-    async function searchMovies() {
-      const query = document.getElementById('searchInput').value;
-      const apiKey = 'cd7a2ac0e8686145766a53cb2041fa75'; // استبدله بمفتاحك من TMDB
-      const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(query)}&language=ar`;
-
-      const response = await fetch(url);
-      const data = await response.json();
-
-      const results = data.results;
-      const moviesDiv = document.getElementById('movies');
-      moviesDiv.innerHTML = '';
-
-      if (results.length === 0) {
-        moviesDiv.innerHTML = '<p>لا توجد نتائج.</p>';
-        return;
-      }
-
-      results.forEach(movie => {
-        const title = movie.title;
-        const overview = movie.overview || 'لا يوجد وصف.';
-        const item = document.createElement('div');
-        item.innerHTML = `<h3>${title}</h3><p>${overview}</p><hr>`;
-        moviesDiv.appendChild(item);
-      });
-    }
-  </script>
-
-</body>
-</html>
+<div class="container ">
+    <h2 class="mb-3">🎬 Favori Filmlerim</h2>
+    <div id="favorite-movies" class="row g-4"></div>
+  </div>
+  
 
 
         <footer class="text-center py-4 border-top">
           <p class="mb-0 text-muted">© 2025 Abdulhadi KRIMESH - Sakarya üniversitesi</p>
       </footer>
+      <script src="../assets/js/ilgialanlarim.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/login.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
