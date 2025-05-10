@@ -1,6 +1,6 @@
 /*sayfanin arka stili icin*/
 [data-bs-theme="light"] body {
-  background: linear-gradient(135deg, #ffffff 0%, #757570 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #90fbff 100%);
 }
 [data-bs-theme="dark"] body {
   background: linear-gradient(135deg, #000000, #291c3d 100%);
