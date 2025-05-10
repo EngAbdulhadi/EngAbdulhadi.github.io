@@ -35,4 +35,12 @@
   .zoom-on-hover:hover {
     transform: scale(1.1); 
   }
-  
+   
+
+/*slider icin */
+.carousel-item img {
+  width: 100%;         
+  height: 600px;       
+  object-fit: cover;   
+  border-radius: 10px; 
+}
