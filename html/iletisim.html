@@ -101,14 +101,73 @@
           </div>
         </nav>
         
-        
-          
+        <div class="container my-5">
+    <h2 class="mb-4 text-center text-primary">İletişim Formu</h2>
 
+    <form id="iletisimForm">
+      <div class="mb-3">
+        <label for="ad" class="form-label">Adınız</label>
+        <input type="text" class="form-control" id="ad" name="ad">
+      </div>
 
+      <div class="mb-3">
+        <label for="email" class="form-label">Email adresiniz</label>
+        <input type="text" class="form-control" id="email" name="email">
+      </div>
+
+      <div class="mb-3">
+        <label for="telefon" class="form-label">Telefon Numaranız</label>
+        <input type="text" class="form-control" id="telefon" name="telefon">
+      </div>
+
+      <div class="mb-3">
+        <label for="cinsiyet" class="form-label">Cinsiyet</label>
+        <select class="form-select" id="cinsiyet" name="cinsiyet">
+          <option value="">Seçiniz</option>
+          <option value="Erkek">Erkek</option>
+          <option value="Kadın">Kadın</option>
+          <option value="Diğer">Diğer</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">İlgi Alanları</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ilgiler" value="Yazılım">
+          <label class="form-check-label">Yazılım</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ilgiler" value="Spor">
+          <label class="form-check-label">Spor</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ilgiler" value="Müzik">
+          <label class="form-check-label">Müzik</label>
+        </div>
+      </div>
+       
+      <div class="mb-3">
+        <label for="mesaj" class="form-label">Mesajınız</label>
+        <textarea class="form-control" id="mesaj" name="mesaj" rows="4"></textarea>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" id="temizleBtn">Temizle</button>
+        <button type="button" class="btn btn-primary" id="gonderBtn">Gönder</button>
+      </div>
+      <div id="vueApp" class="mt-4">
+        <button @click="gonderVue" class="btn btn-success">Framework ile Gönder</button>
+      </div>
+    
+    </form>
+  </div>
 
         <footer class="text-center py-4 border-top">
           <p class="mb-0 text-muted">© 2025 Abdulhadi KRIMESH - Sakarya üniversitesi</p>
       </footer>
+      
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../assets/js/form.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/login.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
