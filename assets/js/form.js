@@ -40,8 +40,6 @@ temizleBtn.addEventListener('click', () => {
 });
 
 
-
-
 //framework ile yapmak (vue.js)
   const { createApp } = Vue;
 
@@ -58,6 +56,8 @@ temizleBtn.addEventListener('click', () => {
     },
     methods: {
       gonderVue() {
+
+       
         // inputlardan değer al
         this.ad = document.getElementById('ad').value.trim();
         this.email = document.getElementById('email').value.trim();
@@ -92,4 +92,6 @@ temizleBtn.addEventListener('click', () => {
       }
     }
   }).mount('#vueApp');
+
+
   
