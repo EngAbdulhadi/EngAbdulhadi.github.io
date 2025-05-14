@@ -101,60 +101,74 @@
                     </section>
     
                     <section class="mb-5">
-                        <h3 class="text-primary my-5">Projeler</h3>
-                        <div class="row g-4 text-center ">
-                            <div class="col-md-3">
-                              <div class="card zoom-on-hover" col-3">
-                                <img src="../assets/img/1.proje.png" class="card-img-top " height="200" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary zoom-on-hover">Go somewhere</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card zoom-on-hover" col-3">
-                                <img src="../assets/img/2.proje.png" class="card-img-top" height="200" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary zoom-on-hover">Go somewhere</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card zoom-on-hover" col-3">
-                                <img src="../assets/img/3.proje.png" class="card-img-top" height="200" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary zoom-on-hover">Go somewhere</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card zoom-on-hover" col-3">
-                                <img src="../assets/img/4.proje.png" class="card-img-top" height="200" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary zoom-on-hover">Go somewhere</a>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section class="mb-3">
-                        <h3 class="text-primary">Eğitim</h3>
-                        <div class="border rounded p-3">
-                            <h5>Sakarya Üniversitesi</h5>
-                            <p><strong>Bölüm:</strong> Bilgisayar Mühendisliği</p>
-                            <p><strong>Sınıf:</strong> 1.sınıf</p>
-                            <p><strong>Dönem:</strong>  2024 - 2025</p>
-                        </div>
-                    </section>
+                       <h3 class="text-primary my-5">Projeler</h3>
+                       <div class="row g-4 text-center d-flex align-items-stretch">
+
+                         <div class="col-md-3 col-sm-6 d-flex">
+                           <div class="card zoom-on-hover d-flex flex-column h-100">
+                             <img src="../assets/img/1.proje.png" class="card-img-top" height="200">
+                             <div class="card-body flex-grow-1 d-flex flex-column">
+                               <h5 class="card-title">Yıllık Ürün Performans Analizi</h5>
+                               <p class="card-text">20 farklı perakende ürününün yıllık satış performansını analiz eden C++ tabanlı bir konsol uygulamasıdır. Stok seviyelerine göre rastgele satış fiyatı ve miktar üreterek net kâr hesaplaması yapmaktadır. Temel amaç, ürün bazında yıllık kârlılığı simüle etmektir.</p>
+                             </div>
+                             <div class="card-footer bg-transparent border-0 mt-auto">
+                               <a href="EngAbdulhadi/yillik-performans-hesabi" class="btn btn-primary zoom-on-hover">Go to GitHub</a>
+                             </div>
+                           </div>
+                         </div>
+                       
+                         <div class="col-md-3 col-sm-6 d-flex">
+                           <div class="card zoom-on-hover d-flex flex-column h-100">
+                             <img src="../assets/img/2.proje.png" class="card-img-top" height="200">
+                             <div class="card-body flex-grow-1 d-flex flex-column">
+                               <h5 class="card-title">Tavuk Çiftliği Simülasyonu</h5>
+                               <p class="card-text">Basit bir tavuk çiftliği ekonomisini simüle eden bu projede, yem tüketimi, yumurta üretimi, tavuk kesimi ve finansal kazanç/gider dengesi gibi değişkenler günlük olarak takip edilmiştir. Amaç, çiftliğin sürdürülebilirliğini sağlayan bir yönetim simülasyonu geliştirmektir.</p>
+                             </div>
+                             <div class="card-footer bg-transparent border-0 mt-auto">
+                               <a href="https://github.com/EngAbdulhadi/-Chicken-Farm-Management-Simulator-" class="btn btn-primary zoom-on-hover">Go to GitHub</a>
+                             </div>
+                           </div>
+                         </div>
+                       
+                         <div class="col-md-3 col-sm-6 d-flex">
+                           <div class="card zoom-on-hover d-flex flex-column h-100">
+                             <img src="../assets/img/3.proje.png" class="card-img-top" height="200">
+                             <div class="card-body flex-grow-1 d-flex flex-column">
+                               <h5 class="card-title">Menü Yönetimi Uygulaması</h5>
+                               <p class="card-text">Windows Forms kullanılarak geliştirilen bu masaüstü uygulamasıyla kullanıcılar, yiyecek öğeleri (meyve, salata, tatlı, içecek) içeren bir menü oluşturabilir, öğe ekleyip silebilir ve toplam maliyeti KDV dahil şekilde görüntüleyebilir. Nesne yönelimli programlama prensipleri kullanılarak tasarlanmıştır.</p>
+                             </div>
+                             <div class="card-footer bg-transparent border-0 mt-auto">
+                               <a href="https://github.com/EngAbdulhadi/-Food-Menu-Management-System-" class="btn btn-primary zoom-on-hover ">Go to GitHub</a>
+                             </div>
+                           </div>
+                         </div>
+                       
+                         <div class="col-md-3 col-sm-6 d-flex">
+                           <div class="card zoom-on-hover d-flex flex-column h-100">
+                             <img src="../assets/img/4.proje.png" class="card-img-top" height="200">
+                             <div class="card-body flex-grow-1 d-flex flex-column">
+                               <h5 class="card-title">İngilizce-Türkçe Kelime Ezberi</h5>
+                               <p class="card-text">C# ve Windows Forms kullanılarak geliştirilen bu uygulama, kullanıcıya rastgele İngilizce kelimeler göstererek doğru Türkçe karşılığını seçmesini sağlar. Sorular .txt dosyasından dinamik olarak yüklenir ve seçenekler rastgele sıralanır. Kullanıcıdan alınan cevaplara göre puanlama yapılır ve doğru/yanlış geri bildirimleri renklerle gösterilir. Uygulama, dil öğrenimini eğlenceli hale getirmeyi amaçlamaktadır.</p>
+                             </div>
+                             <div class="card-footer bg-transparent border-0 mt-auto">
+                               <a href="https://github.com/EngAbdulhadi/KelimeEzberi" class="btn btn-primary zoom-on-hover">Go to GitHub</a>
+                             </div>
+                           </div>
+                         </div>
+                       
+                       </div>
+                      </section>
+                      
+                          
+                      <section class="mb-3">
+                          <h3 class="text-primary">Eğitim</h3>
+                          <div class="border rounded p-3">
+                              <h5>Sakarya Üniversitesi</h5>
+                              <p><strong>Bölüm:</strong> Bilgisayar Mühendisliği</p>
+                              <p><strong>Sınıf:</strong> 1.sınıf</p>
+                              <p><strong>Dönem:</strong>  2024 - 2025</p>
+                          </div>
+                      </section>
     
                     
                 </div>
