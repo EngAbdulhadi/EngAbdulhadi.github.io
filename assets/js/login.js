@@ -15,7 +15,7 @@ function togglePassword() {
   document.getElementById("gobutton").addEventListener("click", function () {
     const currentPath = window.location.pathname.toLowerCase();
   
-    if (currentPath.includes("home.html")) {
+    if (currentPath.includes("index.html")) {
       window.location.href = "html/login.html";
     } else {
       window.location.href = "login.html";
